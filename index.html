@@ -1,4 +1,182 @@
-Hello World
-<html>
-<h1>My Site</h1>
-</html>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <div class="right-align"><h6>vigneswaran<h6></div>
+      <script>
+          $(document).ready(function(){
+              $('.parallax').parallax();
+          });
+      </script>
+      <nav id="top" class="blue hoverable">
+       
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Portfolio</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+       <script>
+ // Initialize collapse button
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+  // Show sideNav
+  $('.button-collapse').sideNav('show');
+ // Hide sideNav
+ $('.button-collapse').sideNav('hide');
+ $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+          $('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+      </script>
+  </nav>
+    
+    <div class="parallax-container">
+        <div class="parallax"><img src="232886.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header center" id="about">About</h2>
+           <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s6">
+              <img src="viki1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s12">
+              <span class="black-text">
+                My name is Vigneswaran, young man willing to learn new technology and have a great eagerness to develop things.
+                I was born on 2 March 1995, I finished my higher secondary in vivekanandha higher secondary school with 89 percentage.
+                Then i choose my Engineering stream as Information Technology in Sri manakula vinayagar engineering college at pondicherry.
+                I passed my gradute with 8.8 CGPA.
+                This is an simple portfolio page of mine.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large blue" href="#top">
+      <i class="material-icons">navigation</i>
+    </a>
+    <script>
+          $('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});</script></div>
+    </div>
+    <div class="parallax-container">
+      <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h2 class="header center teal-text text-lighten-2">ANONYMOUS HELPING FORUM (PONDICHERRY)</h2>
+      </div>
+    </div>
+        <div class="parallax"><img src="575091.jpg"></div>
+    </div>
+     <div class="container">
+    <div class="section" id="work">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+              
+            <h2 class="center brown-text"><i class="material-icons">android</i></h2>
+            <h5 class="center">Android</h5>
+
+            <p class="light">apps list</div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">web</i></h2>
+            <h5 class="center">Web Development</h5>
+
+            <p class="light"><ul><li>A tribute page to Abdul Kalam <a href="https://codepen.io/vikkigoo/full/WxKqVd/">link</a><li>
+                </ul></div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+            <h5 class="center">Codes</h5>
+
+            <p class="light"><ul>
+                <li><a href="https://www.hackerearth.com/@vikki">Hackerearth Profile</a></li>
+                <li><a href="https://www.hackerrank.com/vigneswaran">Hackerrank Profile</a></li></ul></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+<div class="parallax-container">
+        <div class="parallax"><img src="614179.png"></div>
+    </div>
+    <div class="section white" id="contact">
+        <div class="row container">
+            <h2 class="header center">Contact</h2>
+            <ul>
+                <li>Email-Id:vigneswaran231995@gmail.com</li><br>
+                <li>Mobile:9629087079</li><br>
+                <li><a href="https://www.linkedin.com/in/vikkigo">LinkedIn Profile</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="page-footer blue">
+    <div class="footer-copyright">
+            <div class="container">
+            © 2016 vigneswaran
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+          </footer>
+    </body>
+  </html>
